@@ -21,4 +21,9 @@ class Hooks {
             Cypress.env('token', token)
         })
     }
+
+
+
+
 }
+

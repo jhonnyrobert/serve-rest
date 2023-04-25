@@ -8,13 +8,13 @@ describe('Funcionalidade: Autenticação', () => {
                 url: '/login',
                 failOnStatusCode: false,
                 body: {
-                    "email": "fulano@qa.com",
-                    "password": "teste"
+                    email: Cypress.env('email'),
+                    password: Cypress.env('senha')
                 }
             }).then((response) => {
                 expect(response.status).to.eq(200)
                 expect(response.body).to.have.property('message')
-                expect(response.body.message).to.equal('Login realizado com sucesso')                       
+                expect(response.body.message).to.equal('Login realizado com sucesso')
             })
         })
     });
@@ -26,8 +26,8 @@ describe('Funcionalidade: Autenticação', () => {
                 url: '/login',
                 failOnStatusCode: false,
                 body: {
-                    "email": "ciclano@qa.com",
-                    "password": "teste"
+                    email: Cypress.env('email'),
+                    password: '1234'
                 }
             }).then((response) => {
                 expect(response.status).to.eq(401)

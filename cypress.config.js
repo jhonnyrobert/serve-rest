@@ -10,10 +10,8 @@ module.exports = defineConfig({
   "viewportHeight": 900,
   "failOnStatusCode": false,
 
-
   e2e: {
     "baseUrl": "https://serverest.dev/",
-
     //VARIAVEIS DE AMBIENTE
     "env": {
       "email": "fulano@qa.com",
