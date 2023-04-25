@@ -1,0 +1,51 @@
+SegurancaHooks().CapturarToken()
+            .then(() => {
+                cy.request({
+                    method: 'GET',
+                    url: /admserver/api/PessoaFisica/ObterPorCpf/${cpf},
+                    headers: {
+                        Authorization: Bearer ${Cypress.env('token')},
+                    },
+                    failOnStatusCode: false,
+                }).then(response => {
+                    expect(response.status).to.eql(200);
+                    Cypress.env('nome', response.body.nome);
+                    Cypress.env('codigo', response.body.codigoConfirmacao);
+
+                    cy.get('#mat-input-13')
+                        .type(Cypress.env('codigo'))
+                    cy.get('.mat-focus-indicator')
+                        .click()
+                })
+
+            });
+
+_____________________________________________________________________________________________
+# Validar API - CRUD de usuarios // https://serverest.dev/#/
+
+Criterios de aceite :
+-- Validar o CRUD de usuarios 
+-- Validar sempre estatus code 
+-- Validar Mensagem exibida
+
+_____________________________________________________________________________________________
+# Validar o Login-Ui // https://front.serverest.dev/login
+
+Criterios de aceite :
+-- Validar login
+
+
+_____________________________________________________________________________________________
+# Perfomance - Criar teste de carga e de pico [k6] ( Pode utlizar qualquer endpoint )
+
+Criterios de aceite :
+-- 80% das requisições devem se obter sucesso 
+-- 95% das requisições devem ser menor que 05min
+
+_____________________________________________________________________________________________
+CI/CD 
+Criar um workflow do GitHub Actions utlizando docker/container para cada tipo de teste:
+
+-- Job: API
+-- Job: WebApp
+-- Job: Perfomance 
