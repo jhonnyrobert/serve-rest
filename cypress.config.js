@@ -16,8 +16,8 @@ module.exports = defineConfig({
 
     //VARIAVEIS DE AMBIENTE
     "env": {
-      "email": "",
-      "senha": "",
+      "email": "fulano@qa.com",
+      "senha": "teste",
       "token": "",
     },
 
