@@ -21,7 +21,7 @@ SegurancaHooks().CapturarToken()
             });
 
 _____________________________________________________________________________________________
-# Validar API - CRUD de usuarios // https://serverest.dev/#/
+[ V ] # Validar API - CRUD de usuarios // https://serverest.dev/#/
 
 Criterios de aceite :
 -- Validar o CRUD de usuarios 
@@ -29,7 +29,7 @@ Criterios de aceite :
 -- Validar Mensagem exibida
 
 _____________________________________________________________________________________________
-# Validar o Login-Ui // https://front.serverest.dev/login
+[ V ] # Validar o Login-Ui // https://front.serverest.dev/login
 
 Criterios de aceite :
 -- Validar login

@@ -1,9 +1,24 @@
 {
+  "author": "jhonny.santos",
+  "license": "MIT",
+  "name": "serverest",
+  "version": "1.0.0",
+  "description": "Projeto de testes serverest",
   "dependencies": {
     "cypress": "^12.10.0",
-    "cypress-plugin-api": "^2.11.0"
+    "cypress-plugin-api": "^2.11.0",
+    "faker-br": "^0.4.1"
+  },
+  "scripts": {
+    "cy:verify": "cypress verify",
+    "cy:run": "cypress run",
+    "test": "cypress run --spec cypress/e2e/integration/**/*,"
   },
   "devDependencies": {
     "typescript": "^5.0.4"
-  }
+  },
+  "keywords": [
+    "cypress",
+    "nodejs"
+  ]
 }

@@ -1,6 +1,6 @@
-import { Alert, Botao } from "../../pages/ui-page/componentes/componentes-ui-page";
+import { Alert, Botao } from "../../pages/ui-page/shared/componentes-ui-page";
 import { Dash } from "../../pages/ui-page/dash/dash-ui-page";
-import { Login } from "../../pages/ui-page/login/login-ui-page";
+import { Login } from "../../pages/ui-page/logins/login-ui-page";
 
 const email = Cypress.env('email')
 const senha = Cypress.env('senha')
