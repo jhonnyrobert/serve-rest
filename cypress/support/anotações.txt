@@ -36,14 +36,14 @@ Criterios de aceite :
 
 
 _____________________________________________________________________________________________
-# Perfomance - Criar teste de carga e de pico [k6] ( Pode utlizar qualquer endpoint )
+[ V ] # Perfomance - Criar teste de carga e de pico [k6] ( Pode utlizar qualquer endpoint )
 
 Criterios de aceite :
 -- 80% das requisições devem se obter sucesso 
 -- 95% das requisições devem ser menor que 05min
 
 _____________________________________________________________________________________________
-CI/CD 
+[ V ] CI/CD 
 Criar um workflow do GitHub Actions utlizando docker/container para cada tipo de teste:
 
 -- Job: API
