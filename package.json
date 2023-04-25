@@ -13,8 +13,8 @@
     "cy:verify": "cypress verify",
     "cy:run": "cypress run",
     "test": "cypress run --spec cypress/e2e/integration/**/*,",
-    "test:interface": "cypress run --spec cypress/e2e/integration/interface/**/*",
-    "test:api": "cypress run --spec cypress/e2e/integration/api/**/*"
+    "test:interface": "cypress run --spec cypress/e2e/front/**/*",
+    "test:api": "cypress run --spec cypress/e2e/api/**/*"
   },
   "devDependencies": {
     "typescript": "^5.0.4"
