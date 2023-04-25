@@ -3,7 +3,7 @@ name: CI Pipeline
 on: [push]
 
 jobs:
-  all_tests:
+  interface_tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,5 +18,23 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run all tests
-      run: npm test
+    - name: Run interface tests
+      run: npm run test:interface
+
+  api_tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run API tests
+      run: npm run test:api
