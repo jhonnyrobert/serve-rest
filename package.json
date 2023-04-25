@@ -14,7 +14,9 @@
     "cy:run": "cypress run",
     "test": "cypress run --spec cypress/e2e/integration/**/*,",
     "test:interface": "cypress run --spec cypress/e2e/front/**/*",
-    "test:api": "cypress run --spec cypress/e2e/api/**/*"
+    "test:api": "cypress run --spec cypress/e2e/api/**/*",
+    "test:load": "docker run -v $(pwd):/k6 -i loadimpact/k6 run /k6/k6/load.js"
+
   },
   "devDependencies": {
     "typescript": "^5.0.4"

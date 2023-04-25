@@ -49,3 +49,5 @@ Criar um workflow do GitHub Actions utlizando docker/container para cada tipo de
 -- Job: API
 -- Job: WebApp
 -- Job: Perfomance 
+
+v1/feature/Adicionado git workflow
