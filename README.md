@@ -44,7 +44,7 @@ O projeto ServeRest é um projeto de testes para uma aplicação RESTful. Ele ut
    - Para executar todos os testes:
 
      ```sh
-     npm test
+     npm run test
      ```
 
    - Para executar os testes de interface do usuário:
