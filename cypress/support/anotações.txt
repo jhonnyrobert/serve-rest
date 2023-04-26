@@ -36,8 +36,8 @@ Criterios de aceite :
 
 
 _____________________________________________________________________________________________
-[ V ] # Perfomance - Criar teste de carga e de pico [k6] ( Pode utlizar qualquer endpoint )
-
+[ V ] # Perfomance - Criar teste de carga e de pico [k6] (endpoint: http://localhost:3000/produtos )
+http://localhost:3000/produtos'
 Criterios de aceite :
 -- 80% das requisições devem se obter sucesso 
 -- 95% das requisições devem ser menor que 05min
