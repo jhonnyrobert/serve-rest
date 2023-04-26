@@ -96,6 +96,150 @@ serverest/
 └── README.md
 
 ```
+## PLANO DE TESTES - SERVE REST
+### Entendimento do produto
+
+   1.1 Objetivo:
+   
+   - Fornecer uma API REST para e-commerce
+
+   1.2 Funcionalidades:
+   
+   [ Criar - Buscar - Atualizar - Remover ]
+   - usuários
+   - produtos
+   - carrinhos
+   - pedidos
+
+1.3 Público-alvo:
+
+- Testadores
+
+1.4 Documentação:
+
+- https://serverest.dev/#
+
+### Escopo de teste
+
+2.1 Funcionalidades a serem testadas:
+
+- CRUD
+ ```    
+   usuários
+   produtos
+   carrinhos
+   pedidos
+ ```
+ 
+Criterios de aceite
+``` 
+   Validação de status codes
+   Mensagens em cada operação
+``` 
+
+
+2.2 Requisitos não funcionais a serem testados:
+
+  - Performance
+  ``` 
+   Pico
+   Carga
+  ```      
+  - Segurança
+  ``` 
+   Autenticação
+   Autorização
+  ``` 
+  
+Criterios de aceite
+``` 
+   80% das requisições devem se obter sucesso 
+   95% das requisições devem ser menor que 05min
+``` 
+
+2.3 Limitações e exclusões de teste:
+``` 
+   SQL injection
+``` 
+### Abordagem ágil e iterações
+
+   3.1 - ` Testes em sprints`
+   
+   3.2 - ` Integração contínua e entrega contínua (CI/CD)`
+   
+   3.3 - ` Colaboração entre a equipe de desenvolvimento e teste`
+
+### Técnicas de teste
+
+   4.1 - ` Teste manual`
+   
+   4.2 - ` Teste automatizado`
+   
+   4.3 - ` Teste exploratório`
+
+### Ferramentas
+
+   5.1 Documentação
+```
+   wiki
+```  
+   5.2 Teste manual
+```
+   Postman
+   Insomnia
+   Test Plans
+```  
+   5.3 Teste automatizado
+```
+   Linguagem: TS
+   Padrão: Page Objects
+   Framework: Cypress
+```  
+
+### Ambientes de teste
+
+   6.1 - `Ambiente de desenvolvimento`
+   
+   6.2 - `Ambiente de homologação/staging`
+   
+   6.3 - `Ambiente de produção`
+
+### Papéis e responsabilidades
+
+   7.1 - ` Testadores`
+   
+   7.2 - ` Desenvolvedores`
+   
+   7.3 - ` Gerente de projeto/Scrum Master`
+   
+   7.4 - ` Product Owner`
+
+### Métricas e indicadores
+
+   8.1 - ` Cobertura de teste`
+   
+   8.2 - ` Taxa de defeitos encontrados`
+   
+   8.3 - ` Taxa de defeitos corrigidos`
+   
+   8.4 - ` Tempo médio para correção de defeitos`
+
+### Riscos e mitigação
+
+   9.1 - ` Identificação de riscos`
+   
+   9.2 - ` Plano de contingência e mitigação de riscos`
+
+### Cronograma
+
+   10.1 - ` Duração das sprints`
+   
+   10.2 - ` Quantidade de sprints`
+   
+   10.3 - ` Prazo para realização dos testes`
+   
+   10.4 - ` Data de entrega do produto`
+
 ## Contribuindo
 
 Se você deseja contribuir para este projeto, siga estas etapas:
